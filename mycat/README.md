@@ -1,4 +1,4 @@
-## Usage
+# Usage
 ```sh
 $ go run main.go testdata/hoge.txt testdata/fuga.txt
 hoge
@@ -7,7 +7,7 @@ fuga
 fuga fuga
 ```
 
-`-n` can be added to display linu numbers.
+`-n` can be added to display line numbers.
 ```
 $ go run main.go -n testdata/hoge.txt testdata/fuga.txt
 1: hoge
