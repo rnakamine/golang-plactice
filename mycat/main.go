@@ -27,7 +27,7 @@ func readFile(fn string) ([]string, error) {
 }
 
 func main() {
-	var number = flag.Bool("n", false, "add line number")
+	var number = flag.Bool("n", false, "display line numbers")
 	flag.Parse()
 	fileNames := flag.Args()
 
