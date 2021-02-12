@@ -41,9 +41,9 @@ func main() {
 		for _, r := range rows {
 			if *number {
 				lineNumber++
-				fmt.Printf("%d: %s\n", lineNumber, r)
+				fmt.Fprintf(os.Stdout, "%d: %s\n", lineNumber, r)
 			} else {
-				fmt.Println(r)
+				fmt.Fprintln(os.Stdout, r)
 			}
 		}
 	}
