@@ -1,4 +1,5 @@
 # mycat
+Output the given file to standard output
 
 ## Usage
 ```sh
@@ -9,7 +10,7 @@ fuga
 fuga fuga
 ```
 
-`-n` can be added to display line numbers.
+`-n` Can be added to display line numbers.
 ```
 $ go run main.go -n testdata/hoge.txt testdata/fuga.txt
 1: hoge
