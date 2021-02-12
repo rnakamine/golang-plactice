@@ -34,8 +34,8 @@ func main() {
 	for _, fn := range fileNames {
 		rows, err := readFile(fn)
 		if err != nil {
-			fmt.Println(err)
-			break
+			fmt.Fprintln(os.Stderr, err)
+			os.Exit(1)
 		}
 		for _, r := range rows {
 			if *number {
