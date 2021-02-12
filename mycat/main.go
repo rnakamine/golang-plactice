@@ -19,6 +19,9 @@ func readFile(fn string) ([]string, error) {
 	for scanner.Scan() {
 		rows = append(rows, scanner.Text())
 	}
+	if err := scanner.Err(); err != nil {
+		return nil, err
+	}
 
 	return rows, nil
 }
