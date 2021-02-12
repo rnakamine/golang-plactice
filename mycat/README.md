@@ -10,7 +10,7 @@ fuga
 fuga fuga
 ```
 
-`-n` Can be added to display line numbers.
+`-n` option added can be to display line number
 ```
 $ go run main.go -n testdata/hoge.txt testdata/fuga.txt
 1: hoge
