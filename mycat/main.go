@@ -7,8 +7,8 @@ import (
 	"os"
 )
 
-func loadData(path string) ([]string, error) {
-	f, err := os.Open(path)
+func readFile(fn string) ([]string, error) {
+	f, err := os.Open(fn)
 	if err != nil {
 		return nil, err
 	}
@@ -26,12 +26,13 @@ func loadData(path string) ([]string, error) {
 func main() {
 	var number = flag.Bool("n", false, "add line number")
 	flag.Parse()
+	fileNames := flag.Args()
 
 	// line number
 	var ln int
 
-	for _, path := range flag.Args() {
-		rows, err := loadData(path)
+	for _, fn := range fileNames {
+		rows, err := readFile(fn)
 		if err != nil {
 			fmt.Println(err)
 			break
