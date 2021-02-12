@@ -34,6 +34,7 @@ func main() {
 		rows, err := loadData(path)
 		if err != nil {
 			fmt.Println(err)
+			break
 		}
 		for _, r := range rows {
 			if *number {
