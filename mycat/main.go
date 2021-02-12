@@ -28,9 +28,7 @@ func main() {
 	flag.Parse()
 	fileNames := flag.Args()
 
-	// line number
 	var lineNumber int
-
 	for _, fn := range fileNames {
 		rows, err := readFile(fn)
 		if err != nil {
