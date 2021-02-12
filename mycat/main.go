@@ -29,7 +29,7 @@ func main() {
 	fileNames := flag.Args()
 
 	// line number
-	var ln int
+	var lineNumber int
 
 	for _, fn := range fileNames {
 		rows, err := readFile(fn)
@@ -39,8 +39,8 @@ func main() {
 		}
 		for _, r := range rows {
 			if *number {
-				ln++
-				fmt.Printf("%d: %s\n", ln, r)
+				lineNumber++
+				fmt.Printf("%d: %s\n", lineNumber, r)
 			} else {
 				fmt.Println(r)
 			}
