@@ -1,4 +1,6 @@
-# Usage
+# mycat
+
+## Usage
 ```sh
 $ go run main.go testdata/hoge.txt testdata/fuga.txt
 hoge
