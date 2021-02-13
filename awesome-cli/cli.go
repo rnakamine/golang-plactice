@@ -25,7 +25,6 @@ func (c *CLI) Run(args []string) int {
 	}
 
 	if version {
-		// fmt.Fprintf(c.errStream, "awesome-cli version %s\n", Version)
 		fmt.Fprintf(c.errStream, "awesome-cli version %s\n", Version)
 		return ExitCodeOK
 	}
