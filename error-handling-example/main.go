@@ -13,10 +13,6 @@ func ToStringer(v interface{}) (Stringer, error) {
 	return nil, MyError("CastError")
 }
 
-type error interface {
-	Error() string
-}
-
 type MyError string
 
 func (e MyError) Error() string {
